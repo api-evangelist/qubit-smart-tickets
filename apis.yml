@@ -1,8 +1,24 @@
 aid: qubit-smart-tickets
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qubit-smart-tickets.png
 name: Qubit Smart Tickets
-description: Qubit Smart Tickets is a company surfaced as a portfolio company of 500-global and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Qubit Smart Tickets (Boletos Qubit) is a Colombian event-ticketing platform operating
+  at boletosqubit.co, a Spanish-language consumer web application for buying and validating tickets to
+  concerts, sports, and live events, with local payment methods including Nequi. It was surfaced as a
+  500 Global portfolio company and added to the API Evangelist network as a stub. An enrichment pass on
+  2026-07-20 found no publicly documented API, developer portal, OpenAPI/Swagger specification, SDKs,
+  changelog, or /.well-known discovery endpoints; the only server-side surface reachable is an internal
+  PHP backend not intended for public integration, so no API artifacts were generated.
 url: https://raw.githubusercontent.com/api-evangelist/qubit-smart-tickets/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Ticketing
+- Events
+- Entertainment
+- Payments
+- Colombia
+- Latin America
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/qubit-smart-tickets-domain-security.yml
 - type: Website
   url: https://boletosqubit.co
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
